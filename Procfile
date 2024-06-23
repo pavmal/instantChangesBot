@@ -1,2 +1,2 @@
-bot: ./app/bot.py:app
-heroku ps:scale web=1
+bot: ./app/bot.py
+# heroku ps:scale web=1
