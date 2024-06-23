@@ -30,12 +30,12 @@ DB_FILE = Path(f'{BASE_DIR}/' + 'mvine.db')
 # при выполнении команды start
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    video1 = open(f'{VIDEOS_DIR}/video1.mp4', 'rb')
-    bot.send_video(message.from_user.id, video1)
-    video2 = open(f'{VIDEOS_DIR}/video2.mp4', 'rb')
-    bot.send_video(message.from_user.id, video2)
-    video3 = open(f'{VIDEOS_DIR}/video3.mp4', 'rb')
-    bot.send_video(message.from_user.id, video3)
+    # video1 = open(f'{VIDEOS_DIR}/video1.mp4', 'rb')
+    # bot.send_video(message.from_user.id, video1)
+    # video2 = open(f'{VIDEOS_DIR}/video2.mp4', 'rb')
+    # bot.send_video(message.from_user.id, video2)
+    # video3 = open(f'{VIDEOS_DIR}/video3.mp4', 'rb')
+    # bot.send_video(message.from_user.id, video3)
     bot.send_message(message.from_user.id, BASE_REF)
 
 def print_hi(name):
